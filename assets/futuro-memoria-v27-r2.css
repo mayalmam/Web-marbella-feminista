@@ -1,0 +1,67 @@
+@import url('futuro-memoria-v26-r2.css');
+/* V27 · Franja alineada a la escala real del dibujo y composición móvil compacta. */
+@media screen{
+body header{border-bottom:0}
+body header:after,.frame-bands{background:linear-gradient(90deg,transparent 0 39.1%,#321d3b 39.1% 60.4%,#f3debc 60.4% 68.9%,#103efd 68.9% 79.3%,#f2e1c1 79.3% 81.5%,#c24c26 81.5% 93.7%,transparent 93.7%)}
+/* Una escala horizontal única: las bandas no dependen de la altura del texto. */
+.futuro-voices{display:block;align-self:start;position:relative;overflow:hidden;margin-top:-8px;min-width:0;height:auto}
+.futuro-voices img{display:block;position:relative;inset:auto;left:-27%;top:0;width:154%;max-width:none;height:auto;object-fit:contain;object-position:center;transform:none;aspect-ratio:941/1672}
+@media(min-width:781px) and (max-width:1100px){
+body{--frame-unit:calc((var(--frame-width) - 36px)/2.8);--frame-voices:calc(var(--frame-unit)*.65);--frame-offset:calc((100% - var(--frame-width))/2 + var(--frame-unit) + 18px)}
+.futuro-layout,.futuro-top-frame{grid-template-columns:minmax(0,1fr) minmax(130px,.65fr) minmax(0,1.15fr);gap:18px}
+}
+@media(max-width:780px){
+.futuro-top-frame,.futuro-layout{grid-template-columns:minmax(0,1fr) minmax(100px,.56fr);column-gap:12px}
+.futuro-top-frame{min-height:54px}
+.futuro-top-frame .frame-bands{min-height:58px}
+.futuro-top-frame>span{font-size:7px;line-height:1.4}
+.futuro-top-frame>span:last-of-type{padding-bottom:10px}
+.futuro-layout{row-gap:18px;min-height:0;padding:16px 0 0;align-items:start}
+.futuro-copy{display:contents}
+body .futuro-hero .futuro-copy>.eyebrow{grid-column:1;grid-row:1;margin:0;align-self:end;font-size:9px;line-height:1.4;padding-top:8px;letter-spacing:.1em}
+body .futuro-hero h1{grid-column:1;grid-row:2;font-size:clamp(27px,7.6vw,43px);line-height:1.06;letter-spacing:-.065em;margin:0;align-self:start}
+body .futuro-hero .lead{grid-column:1;grid-row:3;font-size:15px;line-height:1.55;margin:0;max-width:none;align-self:start}
+body .futuro-hero .lead br{display:none}
+.futuro-voices{grid-column:2;grid-row:1/4;align-self:start;margin-top:-24px;width:100%;height:auto;overflow:hidden}
+.futuro-voices img{position:relative;inset:auto;left:-27%;top:0;width:154%;max-width:none;height:auto;aspect-ratio:941/1672;object-fit:contain;transform:none}
+body .futuro-hero .actions{grid-column:1/-1;grid-row:4;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 14px;align-items:center;margin:0;padding:0}
+body .futuro-hero .actions>.btn:not(.passport-sticker){grid-column:1;grid-row:1;width:100%;padding:12px;font-size:12px;line-height:1.45;min-height:48px;align-self:center;text-align:center}
+body .futuro-hero .actions>.btn:not(.passport-sticker)>span{margin-left:4px}
+body .futuro-hero .passport-sticker.passport-book-button{grid-column:2;grid-row:1;width:100%;min-height:100px;gap:7px;align-items:center;margin:0;padding:0}
+body .futuro-hero .passport-sticker .book-object{width:58px;margin-left:0;flex-shrink:0}
+body .futuro-hero .passport-sticker .book-title{font-size:7px}
+body .futuro-hero .passport-sticker .book-title>small{font-size:3.5px}
+body .futuro-hero .passport-sticker .book-callout{margin-left:0}
+body .futuro-hero .passport-sticker .book-callout>strong{font-size:14px;line-height:1.15}
+body .futuro-hero .passport-sticker .book-callout>span{font-size:9px;line-height:1.45;margin-top:7px}
+body .futuro-hero .passport-sticker .book-callout>small{font-size:8px;line-height:1.4;margin-top:4px}
+body .futuro-stories{grid-column:1/-1;grid-row:2;margin:0;padding:7px 0;font-size:12px;min-height:36px}
+.futuro-map{grid-column:1/-1;grid-row:5;margin:0 0 20px}
+.futuro-map-inner{padding:10px;min-height:0}
+.futuro-map img{width:100%;height:auto;max-height:none;object-fit:contain}
+.futuro-base{margin-top:0}
+}
+@media(max-width:360px){
+body .futuro-hero .lead{font-size:14px}
+body .futuro-hero .passport-sticker .book-object{width:48px}
+body .futuro-hero .passport-sticker .book-callout>strong{font-size:13px}
+body .futuro-hero .actions{gap:10px}
+}
+}
+@media screen{
+/* El porcentaje excluye la anchura de la barra de desplazamiento del navegador. */
+body{--frame-width:min(1240px,90%)}
+@media(max-width:780px){
+body .banner{font-size:8px;letter-spacing:.08em;line-height:1.4;padding:6px 14px}
+body nav{padding-top:12px;padding-bottom:12px}
+.futuro-top-frame,.futuro-layout{grid-template-columns:minmax(0,1fr) 96px}
+.futuro-top-frame{min-height:40px}
+.futuro-top-frame .frame-bands{grid-row:1;min-height:40px}
+.futuro-top-frame>span:first-of-type{padding:0 0 10px;align-self:end}
+.futuro-top-frame>span:last-of-type{display:none}
+body .futuro-hero .actions{grid-template-rows:100px;row-gap:0}
+body .futuro-hero .actions>.btn:not(.passport-sticker){grid-row:1;align-self:start}
+body .futuro-hero .passport-sticker.passport-book-button{grid-row:1;align-self:center}
+body .futuro-stories{grid-column:1;grid-row:1;align-self:end;justify-self:start;font-size:11px;min-height:36px;padding:7px 0}
+}
+}
