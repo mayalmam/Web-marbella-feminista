@@ -1,0 +1,9 @@
+@import url('futuro-memoria-v28-r2.css');
+/* V29: un mismo módulo vectorial define prolongación y arranque, sin interpolación. */
+@media screen{
+body .hero.poster-hero.futuro-hero{overflow-x:clip;overflow-y:visible}
+.futuro-voices:before{top:calc(-1 * var(--ribbon-rise));height:calc(var(--ribbon-rise) + 8px);border:0;border-image:none;background:url('franjas-vector-v29.svg') 0 0/100% 100% no-repeat;clip-path:inset(0 17.54% 0 40%)}
+/* Se sustituye únicamente el tramo recto superior; los perfiles se conservan. */
+.futuro-art-crop>img{clip-path:polygon(0 0,42.4% 0,42.4% 14.952%,100% 14.952%,100% 100%,0 100%)}
+.futuro-art-crop:after{content:"";display:block;position:absolute;z-index:2;top:0;left:-27%;width:154%;aspect-ratio:941/250;background:url('franjas-vector-v29.svg') 0 0/100% 100% no-repeat;clip-path:inset(0 17.54% 0 40%);pointer-events:none}
+}
