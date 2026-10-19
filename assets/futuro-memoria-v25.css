@@ -1,0 +1,196 @@
+/* Propuesta 03 · Futuro con memoria · V25. Base V23 restaurada y aislada en capa CSS.
+   No modifica los datos, los mapas, el sellado ni las plantillas de impresión. */
+@font-face{font-family:Limelight;src:url('fonts/limelight.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@media screen{
+:root{--ink:#302139;--wine:#284bff;--cream:#efe2c6;--rose:#e4d3b2;--olive:#302139;--line:#c5b592;--oxide:#bc4b2e;--paper:#faf5e9;--muted:#625668}
+body{background:var(--cream);color:var(--ink);font:16px/1.7 Arial,Helvetica,sans-serif}
+body a{color:var(--wine)}
+body .wrap{width:min(1240px,90%)}
+body .banner{background:var(--ink);color:var(--cream);font-size:10px;letter-spacing:.15em;padding:7px 16px}
+body header{background:var(--cream);border-bottom:1px solid var(--ink)}
+body nav{padding:19px 0;gap:25px}
+body .brand{font:400 21px/1.05 Limelight,Georgia,serif;color:var(--ink);letter-spacing:-.04em;max-width:215px}
+body .brand small{font:11px/1.5 Arial,sans-serif;letter-spacing:.1em;margin-top:7px}
+body .navlinks{gap:24px;align-items:center}
+body .navlinks a{font-size:12px;color:var(--ink);font-weight:600;padding:8px 0}
+body .navlinks a[href="#pasaporte"]{font-weight:400;border-left:1px solid var(--line);padding-left:22px}
+body .navlinks a:hover{text-decoration:underline}
+body .menu{border:1px solid var(--ink);border-radius:0;color:var(--ink);padding:9px 14px}
+body .site-version{background:var(--ink);color:var(--paper);box-shadow:none;border:1px solid var(--cream);font-size:10px;right:8px;bottom:8px}
+body .deco-hero{background:var(--cream);color:var(--ink);padding:0;overflow:hidden}
+.deco-meta,.deco-bottom{display:flex;justify-content:space-between;gap:20px;font:10px/1.6 Arial,sans-serif;font-weight:700;letter-spacing:.13em;padding:20px 0;border-bottom:1px solid var(--line)}
+.deco-bottom{border-top:1px solid var(--ink);border-bottom:0;padding:19px 0}
+.deco-layout{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center;padding:54px 0 58px}
+.deco-copy{min-width:0;position:relative;padding-left:27px;border-left:8px solid var(--wine)}
+.deco-copy:before{content:"";position:absolute;left:-19px;top:0;width:5px;height:115px;background:var(--oxide)}
+body .deco-hero .eyebrow{color:var(--ink);font-size:10px;letter-spacing:.18em;margin:0 0 20px}
+body .deco-hero h1{font:400 clamp(43px,5.6vw,78px)/1.04 Limelight,Georgia,serif;letter-spacing:-.055em;text-transform:uppercase;color:var(--ink);margin:0 0 25px;max-width:none}
+.deco-hero h1 span{display:block}
+.deco-statement{font:600 clamp(25px,2.7vw,36px)/1.17 Georgia,serif;letter-spacing:-.035em;margin:20px 0;color:var(--ink)}
+.deco-description{font-size:15px;line-height:1.7;max-width:390px}
+body .deco-hero .actions{gap:19px;margin-top:26px}
+body .btn,body .deco-hero .btn{background:var(--wine);color:white;border:1px solid var(--wine);border-radius:0;padding:13px 18px;font-size:13px;font-weight:600;letter-spacing:0;line-height:1.5;min-height:46px}
+.deco-hero .btn span{margin-left:15px}
+body .deco-route-link{font-size:12px;color:var(--ink);font-weight:600;padding:9px 0}
+.deco-passport-link{border-top:1px solid var(--line);margin:30px 0 0;padding-top:16px;font-size:12px}
+.deco-passport-link a{color:var(--ink);font-weight:700}
+.deco-passport-link>span{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.deco-map-frame{min-width:0;position:relative;margin:8px 0 8px;padding:18px;background:var(--paper);border:1px solid var(--ink);box-shadow:9px 9px 0 var(--cream),10px 10px 0 var(--ink)}
+.deco-map-frame:before{content:"";position:absolute;right:20px;top:-12px;width:61px;height:11px;background:linear-gradient(90deg,var(--wine) 65%,var(--oxide) 65%)}
+.deco-map-label{display:flex;justify-content:space-between;gap:10px;font:9px/1.5 Arial,sans-serif;letter-spacing:.09em;border-bottom:1px solid var(--line);padding-bottom:12px}
+.deco-map-frame img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;margin:12px 0;filter:none}
+.deco-map-frame figcaption{font-size:11px;line-height:1.6;border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.deco-map-frame figcaption a{color:var(--ink)}
+body .section{padding:85px 0}
+body h2{font:400 clamp(30px,3.6vw,49px)/1.13 Limelight,Georgia,serif;letter-spacing:-.045em;text-transform:none;color:var(--ink);max-width:950px;margin:14px 0 25px}
+body h3{font:600 25px/1.2 Georgia,serif;color:var(--ink);letter-spacing:-.035em}
+body .eyebrow,body .label{color:var(--ink);font-size:10px;letter-spacing:.14em}
+body .small,body .muted{color:var(--muted);font-size:13px}
+body .intro{grid-template-columns:1fr 1fr;gap:8%;align-items:start}
+body .intro h2{font-size:clamp(30px,3.4vw,46px)}
+body .intro p{max-width:600px}
+body .axis{border-top:1px solid var(--ink);padding:25px 20px 25px 0;position:relative}
+body .axis b{font:400 58px/1 Limelight,Georgia,serif;letter-spacing:-.05em;color:var(--wine)}
+body .axis:nth-child(2) b{color:var(--oxide)}
+body .axis:nth-child(3) b{color:var(--ink)}
+body .axis h3{font-size:25px;margin-top:23px}
+body .axis p{font-size:14px}
+body .route-section{background:var(--ink);color:var(--cream);border:0}
+body .route-section h2,body .route-section .eyebrow{color:var(--cream)}
+body #recorrido .segments{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:35px 0}
+body #recorrido .segment{background:var(--cream);color:var(--ink);border:0;border-top:7px solid var(--wine);border-radius:0;padding:27px 23px;min-height:210px;position:relative}
+body #recorrido .segment:nth-child(2){border-top-color:var(--oxide)}
+body #recorrido .segment:nth-child(3){border-top-color:#a599be}
+body #recorrido .segment[aria-current=true]{outline:2px solid var(--cream);outline-offset:5px}
+body .segment strong{font:600 27px/1.18 Georgia,serif;letter-spacing:-.04em;color:var(--ink);margin:22px 0}
+body .segment span{font-size:10px}
+body .segment small{font-size:12px}
+body .route-section .map-help{background:transparent;color:var(--cream);border-left:2px solid var(--oxide)}
+body .route-section .map-help .small{color:#d9cde0}
+body .route-index a{color:var(--cream);border-color:#a79bac;border-radius:0;width:40px;height:40px}
+body .route-index a:hover{background:var(--cream);color:var(--ink)}
+body .ruta-detalle,body .agua-piloto{background:var(--paper);color:var(--ink);border-color:var(--wine)}
+body .ruta-detalle h2,body .agua-piloto h2,body .agua-kicker,body .ruta-eyebrow{color:var(--ink)}
+body .ruta-punto,body .agua-stop{background:var(--cream);border-color:var(--line);color:var(--ink)}
+body .ruta-punto small{color:var(--muted)}
+body .ruta-cerrar,body .ruta-botones a,body .agua-actions a,body .paradas-bloque-toggle,body .stop .parada-toggle{background:var(--wine);color:white;border:1px solid var(--wine);border-radius:0;box-shadow:none;min-height:44px;font-size:14px}
+body .ruta-botones a:not(:first-child),body .agua-actions a:not(:first-child){background:transparent;color:var(--ink);border-color:var(--ink)}
+body #paradas{position:relative}
+body .paradas-bloque-toggle{max-width:440px;padding:17px 22px}
+body .filter button{border-color:var(--ink);color:var(--ink);border-radius:0;min-height:44px}
+body .filter button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+body .stop{border-color:var(--line);grid-template-columns:90px minmax(0,1fr);gap:28px;padding:34px 0}
+body .number{font:400 64px/1 Limelight,Georgia,serif;color:var(--wine);letter-spacing:-.06em}
+body .stop h3{font:600 clamp(23px,2.6vw,32px)/1.2 Georgia,serif;color:var(--ink);max-width:850px}
+body .theme{color:var(--muted);font-size:16px}
+body .stop details p{max-width:740px;font-size:16px;line-height:1.8}
+body .stop summary,body .listen{color:var(--wine)}
+body .stamp-notice{background:var(--rose);color:var(--ink);border-color:var(--ink);font-size:12px;font-weight:400}
+body .stamp-notice a{color:var(--ink)}
+body .voice-panel{background:var(--paper);border-color:var(--line)}
+body .previewvoice{background:var(--ink)}
+body .resources{background:var(--rose)}
+body .resource{background:var(--paper);border-top:3px solid var(--ink);border-radius:0}
+body .resource h3{font-size:26px}
+body .state{border-color:var(--line);border-radius:0;font-size:9px;letter-spacing:.07em}
+body .printbtn{border-color:var(--ink);color:var(--ink);border-radius:0;min-height:44px}
+body #pasaporte{background:#e7dcc7;color:var(--ink);border-top:1px solid var(--line);padding:60px 0}
+body #pasaporte>.wrap{max-width:1000px}
+body .passport-cover{background:transparent;color:var(--ink);padding:0 0 20px;border:0;border-bottom:1px solid var(--line);box-shadow:none;margin-bottom:20px}
+body .passport-cover h2{color:var(--ink);font-size:clamp(27px,3.1vw,38px);letter-spacing:-.035em}
+body .passport-cover small{color:var(--muted);font-size:10px;letter-spacing:.12em}
+body .passport-cover p{font-size:13px}
+body .passport-book:before{color:var(--ink)}
+body .passport-tile .passport-symbol,body .passport-tile[data-stamped=true] .passport-symbol{border-color:var(--ink);color:var(--ink)}
+body .passport-tile .passport-state{color:var(--ink)}
+body .passport-actions button{background:var(--ink);color:var(--paper);border-radius:0}
+body .passport-actions button:disabled{background:#ded4c2;color:#625668}
+body footer{background:var(--ink);color:var(--cream);padding:42px 0}
+body footer strong{font:400 21px Limelight,Georgia,serif}
+body footer a{color:var(--paper)}
+body a:focus-visible,body button:focus-visible,body summary:focus-visible{outline:3px solid var(--wine);outline-offset:5px}
+body .route-section a:focus-visible,body footer a:focus-visible{outline-color:var(--cream)}
+body .btn:hover,body .paradas-bloque-toggle:hover,body .stop .parada-toggle:hover{background:#203bc8;color:white}
+@media(min-width:781px) and (max-width:1020px){body .navlinks{gap:13px}body .navlinks a{font-size:11px}body .brand{font-size:18px}.deco-layout{gap:5%}.deco-copy{padding-left:17px}.deco-hero .actions{align-items:flex-start;flex-direction:column;gap:5px}body #recorrido .segment{padding:23px 17px}body .segment strong{font-size:24px}}
+@media(max-width:780px){
+body nav{padding:15px 0}body .brand{font-size:19px;max-width:190px}body .navlinks{background:var(--cream);border-color:var(--ink);top:82px;gap:10px;align-items:stretch}body .navlinks a{font-size:14px;padding:10px 0}body .navlinks a[href="#pasaporte"]{border-left:0;padding-left:0}
+.deco-meta{font-size:8px;letter-spacing:.07em;padding:15px 0;gap:12px}.deco-meta span:last-child{text-align:right}
+.deco-layout{grid-template-columns:1fr;gap:38px;padding:35px 0 38px}.deco-copy{padding-left:22px;margin-left:10px;border-left-width:6px}.deco-copy:before{left:-16px;width:4px;height:80px}
+body .deco-hero h1{font-size:clamp(40px,10.8vw,75px);letter-spacing:-.055em;margin-bottom:20px}.deco-statement{font-size:29px}.deco-description{max-width:460px;font-size:15px}.deco-passport-link{margin-top:22px}.deco-map-frame{width:calc(100% - 10px);margin:0;padding:14px}.deco-bottom{font-size:8px;letter-spacing:.06em;gap:12px}
+body .section{padding:55px 0}body .intro{grid-template-columns:1fr;gap:15px}body .intro h2{font-size:34px}body .grid3{grid-template-columns:1fr;gap:15px}body .axis{display:grid;grid-template-columns:62px 1fr;gap:0 16px;padding:22px 0}body .axis b{font-size:44px;grid-row:1/3}body .axis h3{margin:0 0 10px}body .axis p{grid-column:2;margin:0}
+body #recorrido .segments{grid-template-columns:1fr;gap:17px}body #recorrido .segment{min-height:0;padding:23px}body .segment strong{font-size:26px;margin:15px 0}body .stop{grid-template-columns:48px minmax(0,1fr);gap:15px}body .number{font-size:38px}body .stop h3{font-size:24px}body .stop .parada-toggle{font-size:13px;padding:12px}body .paradas-bloque-toggle{max-width:100%;font-size:14px}body .small{font-size:12px}body .route-index{gap:7px}body .route-index a{width:39px;height:39px}
+body footer .wrap{display:block}body .site-version{font-size:9px;padding:4px 6px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+}
+@media screen{
+body .ruta-detalle .ruta-eyebrow{color:var(--ink)}
+body .agua-map{border:1px solid var(--ink);border-radius:0;margin:0}
+body .agua-stop,body .ruta-punto{border-radius:0}
+body .agua-stop h3,body .agua-map .leaflet-popup-content h3{color:var(--ink)}
+body .agua-stop a{background:var(--wine);border-radius:0;min-height:44px}
+body .agua-actions a:last-child,body .ruta-botones a:last-child{color:var(--ink)!important}
+body .agua-pin{background:var(--wine);border-color:var(--paper)}
+body .agua-map .leaflet-popup-content a{color:var(--wine)}
+body .agua-photo-placeholder{background:var(--rose);color:var(--ink);border-radius:0}
+body .stop.parada-abierta{border-color:var(--ink)}
+body .deco-map-frame{border-radius:0 44px 0 0}
+body .deco-map-label{padding-right:14px}
+}
+/* Composición de la lámina 03: texto / perfiles / mapa enmarcado. */
+@media screen{
+body .brand{font-size:24px;line-height:.95;max-width:220px}
+body header{position:relative;isolation:isolate;background:var(--cream)}
+body header:before{content:"";position:absolute;inset:0 auto 0 0;width:41px;background:linear-gradient(90deg,var(--oxide) 0 14px,var(--cream) 14px 20px,var(--wine) 20px 41px);z-index:-1}
+body header .navlinks a{background:transparent}
+body .hero.poster-hero.futuro-hero{background:var(--cream);color:var(--ink);padding:0;overflow:hidden}
+.futuro-meta{display:flex;justify-content:space-between;gap:20px;font-size:9px;font-weight:700;letter-spacing:.12em;padding:16px 0;border-bottom:1px solid var(--line)}
+.futuro-layout{display:grid;grid-template-columns:minmax(0,.95fr) minmax(110px,.57fr) minmax(0,1.35fr);align-items:stretch;gap:24px;padding:0;min-height:600px}
+.futuro-copy{align-self:center;padding:46px 0;min-width:0}
+body .futuro-hero .eyebrow{color:var(--ink);font-size:10px;letter-spacing:.15em;margin:0 0 18px}
+body .futuro-hero h1{font:700 clamp(33px,3.35vw,49px)/1.05 Georgia,'Times New Roman',serif;letter-spacing:-.065em;color:var(--ink);text-transform:none;margin:0 0 25px;position:static;max-width:none}
+body .futuro-hero .lead{font:400 17px/1.6 Arial,sans-serif;letter-spacing:0;margin:0;max-width:330px;color:var(--ink)}
+body .futuro-hero .actions{display:flex;flex-direction:column;gap:18px;align-items:flex-start;margin-top:28px}
+body .futuro-hero .btn{background:var(--oxide);border:1px solid var(--oxide);color:#fff;padding:13px 17px;font:700 13px/1.5 Arial,sans-serif;letter-spacing:0;min-height:46px;border-radius:0;box-shadow:none;transform:none}
+body .futuro-hero .btn>span{margin-left:8px}
+body .futuro-hero .btn:hover{background:#9e3c23}
+body .futuro-hero .passport-sticker{display:inline-flex;flex-direction:column;align-items:stretch;justify-content:center;gap:7px;width:min(100%,260px);padding:13px 14px;background:var(--ink);border:1px solid var(--ink);color:var(--cream);box-shadow:4px 4px 0 var(--wine);transform:none;text-align:left}
+body .futuro-hero .passport-sticker .sticker-kicker{display:flex;justify-content:space-between;color:var(--cream);font-size:9px;font-weight:600;letter-spacing:.08em}
+body .futuro-hero .passport-sticker strong{color:var(--cream);font:400 22px/1.1 Limelight,Georgia,serif;letter-spacing:-.03em}
+body .futuro-hero .passport-sticker .sticker-ribbon{background:var(--cream);color:var(--ink);font:700 10px/1.3 Arial,sans-serif;padding:7px 8px;letter-spacing:.02em;text-align:center}
+body .futuro-hero .passport-sticker:hover{background:var(--ink);transform:translateY(-2px);box-shadow:4px 6px 0 var(--wine)}
+body .futuro-stories{color:var(--ink);font-size:12px;font-weight:600;margin-top:4px}
+.futuro-voices{align-self:stretch;position:relative;min-width:0;overflow:hidden;display:flex;align-items:stretch;justify-content:center}
+.futuro-voices img{height:100%;width:100%;position:absolute;inset:0;object-fit:cover;object-position:center}
+.futuro-map{min-width:0;margin:35px 0;align-self:center;position:relative;padding:0;background:var(--paper);border:1px solid var(--wine);box-shadow:none;border-radius:0}
+.futuro-map-inner{padding:14px;display:flex;align-items:center;justify-content:center;min-height:430px}
+.futuro-map img{display:block;width:100%;max-width:100%;height:auto;max-height:560px;object-fit:contain;filter:none;transform:none;position:static}
+.futuro-map figcaption{border-top:1px solid var(--line);color:var(--ink);text-align:center;font-size:10px;letter-spacing:.04em;padding:10px 12px}
+.futuro-base{border-top:1px solid var(--line);border-bottom:0}
+body #recorrido .segments{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+body #recorrido .segment{min-height:230px}
+body #recorrido .passport-entry{background:var(--cream);border:1px solid var(--cream);border-top:7px solid var(--wine);color:var(--ink);box-shadow:none;transform:none;border-radius:0;padding:20px 15px;position:relative;isolation:isolate;overflow:hidden;min-height:230px}
+body #recorrido .passport-entry:before{content:"";position:absolute;inset:0;opacity:.12;background:url('perfiles-mujeres-v25.png') center right/auto 130% no-repeat;z-index:-1}
+body #recorrido .passport-entry-mark{border-color:var(--ink);font-size:9px}
+body #recorrido .passport-entry strong{border:0;border-radius:0;padding:20px 0;font:400 22px/1.15 Limelight,Georgia,serif;transform:none;letter-spacing:-.035em}
+body #recorrido .passport-entry-bottom{font-size:10px;font-weight:700}
+body .passport-cover{position:relative;isolation:isolate;overflow:hidden;background:var(--cream);border:1px solid var(--ink);border-left:12px solid var(--wine);padding:32px 190px 32px 30px;min-height:220px;box-shadow:5px 5px 0 var(--oxide)}
+body .passport-cover:after{content:"";position:absolute;inset:0 0 0 auto;width:170px;background:url('perfiles-mujeres-v25.png') center 34%/cover no-repeat;z-index:-1}
+body .passport-cover h2{font-size:clamp(28px,3.4vw,44px);max-width:590px}
+body .passport-cover small{color:var(--ink)}
+body #pasaporte{padding:75px 0}
+body .resource{position:relative;overflow:hidden}
+body .resource:after{content:"";display:block;margin-top:20px;width:38px;height:5px;background:var(--oxide)}
+@media(min-width:781px) and (max-width:1100px){.futuro-layout{grid-template-columns:minmax(0,1fr) minmax(90px,.45fr) minmax(0,1.15fr);gap:18px;min-height:580px}body .futuro-hero h1{font-size:36px}body .futuro-hero .lead{font-size:15px}.futuro-map-inner{min-height:350px;padding:10px}body #recorrido .segments{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:780px){
+body header:before{width:19px;background:linear-gradient(90deg,var(--oxide) 0 6px,var(--cream) 6px 10px,var(--wine) 10px 19px)}
+body .brand{font-size:20px;max-width:190px}body nav{padding-left:6px}
+.futuro-meta{font-size:8px;letter-spacing:.06em;gap:15px}.futuro-meta span:last-child{text-align:right}
+.futuro-layout{grid-template-columns:minmax(0,1fr) 26%;gap:16px;min-height:0;padding-top:0}.futuro-copy{padding:34px 0 30px}body .futuro-hero h1{font-size:clamp(31px,7.7vw,48px)}body .futuro-hero .lead{font-size:15px;line-height:1.6}body .futuro-hero .lead br{display:none}
+body .futuro-hero .passport-sticker{width:100%;max-width:260px}body .futuro-hero .passport-sticker strong{font-size:clamp(17px,4.6vw,22px)}body .futuro-hero .passport-sticker .sticker-kicker{font-size:8px}body .futuro-hero .passport-sticker .sticker-ribbon{font-size:9px}body .futuro-hero .btn{font-size:12px;padding:12px}
+.futuro-voices{grid-column:2;grid-row:1}.futuro-map{grid-column:1/-1;grid-row:2;margin:0 0 26px}.futuro-map-inner{min-height:0;padding:12px}.futuro-map img{max-height:none}.futuro-base{font-size:7px;padding:14px 0}
+body #recorrido .segments{grid-template-columns:1fr}body #recorrido .segment,body #recorrido .passport-entry{min-height:0}body #recorrido .passport-entry{min-height:220px}
+body .passport-cover{padding:25px 100px 25px 20px;min-height:190px;border-left-width:7px}body .passport-cover:after{width:90px}body .passport-cover h2{font-size:27px}body .passport-cover p{font-size:11px}
+}
+}
+@media screen and (max-width:780px){.futuro-voices img{object-fit:fill;width:154%;max-width:none;left:-27%;height:100%}}
