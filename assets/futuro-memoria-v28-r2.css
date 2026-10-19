@@ -1,0 +1,12 @@
+@import url('futuro-memoria-v27-r2.css');
+/* V28: la prolongación se obtiene de la misma franja de píxeles que el dibujo. */
+@media screen{
+body header{background:transparent}
+body header:after{display:none}
+.frame-bands{background:none!important}
+body .hero.poster-hero.futuro-hero{overflow:visible}
+.futuro-voices{overflow:visible;isolation:isolate;z-index:2;--ribbon-rise:180px}
+.futuro-art-crop{position:relative;z-index:1;width:100%;overflow:hidden}
+.futuro-voices:before{content:"";position:absolute;z-index:0;left:-27%;top:calc(-1 * var(--ribbon-rise) - 200px);width:154%;height:calc(var(--ribbon-rise) + 208px);box-sizing:border-box;border-style:solid;border-color:transparent;border-width:calc(var(--ribbon-rise) + 208px) 0 0;border-image-source:url('perfiles-mujeres-v25.png');border-image-slice:18 0 0 0;border-image-width:1 0 0 0;border-image-repeat:stretch;clip-path:inset(200px 0 0 40%);pointer-events:none}
+@media(max-width:780px){.futuro-voices{--ribbon-rise:32px}body header .navlinks{z-index:8}}
+}
