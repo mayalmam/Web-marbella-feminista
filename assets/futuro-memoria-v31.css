@@ -1,0 +1,3 @@
+@import url('futuro-memoria-v30.css');
+.tramo-mapa{height:570px;width:100%;background:var(--paper);isolation:isolate;z-index:0}.agua-layout>*{min-width:0}.tramo-mapa .leaflet-control a{color:var(--ink)}
+@media(max-width:760px){.tramo-mapa{height:440px}.ruta-detalle .agua-layout{grid-template-columns:minmax(0,1fr)}}
