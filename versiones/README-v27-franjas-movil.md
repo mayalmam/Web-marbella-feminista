@@ -9,3 +9,5 @@
 - Se incorpora una página auxiliar de revisión a 390 px en `revision-movil-v27.html`, fuera de la navegación principal.
 
 Versiones anteriores conservadas. Estilos adicionales: `assets/futuro-memoria-v27.css`.
+
+Verificado en navegador: vista móvil con 390 px útiles, sin desbordamiento horizontal, proporción del dibujo 0,56282 frente a 0,56280 original. El mapa comienza aproximadamente a 525 px del inicio, frente a 680 px en el primer ensayo. Menú móvil abre y cierra correctamente.
