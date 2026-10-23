@@ -1,0 +1,27 @@
+@import url('calle-capas-v34.css?r=5');
+/* Cubiertas con comportamiento compartido: el enlace incluye toda la pieza. */
+body .passport-cover-link{display:inline-flex;justify-self:center;text-decoration:none;color:var(--paper);padding:8px;cursor:pointer;grid-column:3}
+body #recorrido .passport-entry{cursor:pointer}
+body #recorrido .passport-entry .street-passport-cover strong{font:400 16px/1.1 Street,Impact,sans-serif;transform:none;border:0;border-radius:0;padding:0}
+body .passport-cover-link .street-passport-cover{pointer-events:none}
+@keyframes passport-invite-v35{from{transform:translateY(0) rotate(-7deg)}to{transform:translateY(-9px) rotate(2deg)}}
+@media(prefers-reduced-motion:no-preference){
+body #recorrido a.passport-entry:hover .street-passport-cover,body #recorrido a.passport-entry:focus-visible .street-passport-cover,body a.passport-cover-link:hover .street-passport-cover,body a.passport-cover-link:focus-visible .street-passport-cover{animation:passport-invite-v35 .65s ease-in-out infinite alternate!important}
+body a.mobile-passport-link:hover .mini-cover,body a.mobile-passport-link:focus-visible .mini-cover{animation:passport-invite-v35 .65s ease-in-out infinite alternate!important}
+}
+body #pasaporte .passport-heading{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:35px;align-items:center;max-width:760px;margin:0 0 30px}
+body #pasaporte .passport-heading h2{font:400 clamp(32px,4vw,52px)/1.08 Street,Impact,sans-serif;margin:15px 0;color:var(--ink)}
+body #pasaporte .passport-heading p{font-size:15px}body #pasaporte .passport-heading small{font-size:10px;letter-spacing:.08em}
+body #pasaporte .passport-heading .street-passport-cover{width:150px;height:200px}body #pasaporte .passport-heading .street-passport-cover small{font-size:9px}body #pasaporte .passport-heading .street-passport-cover strong{font-size:23px}
+/* Imagen de sello real en color: no se filtra a blanco y negro. */
+body #pasaporte .passport-tile[data-stamped=true] img.illustrated-stamp{display:block;width:132px;max-width:100%;height:132px;min-height:0;max-height:132px;filter:none!important;opacity:.95;object-fit:contain;mix-blend-mode:multiply;transform:rotate(-7deg)}
+body #pasaporte .passport-tile[data-stamped=true]:nth-child(3n) img.illustrated-stamp{transform:rotate(7deg)}
+body .print-souvenir img.illustrated-stamp{filter:none!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+@layer v23{body #pasaporte .passport-tile[data-stamped=true] img.illustrated-stamp,body .print-souvenir img.illustrated-stamp{filter:none!important}}
+@media(max-width:780px){
+body .street-passport-teaser .passport-cover-link{grid-column:2;grid-row:1/3;justify-self:center;padding:5px}
+body #pasaporte .passport-heading{grid-template-columns:minmax(0,1fr) 92px;gap:16px;margin-bottom:25px}body #pasaporte .passport-heading h2{font-size:30px}body #pasaporte .passport-heading p{font-size:12px}body #pasaporte .passport-heading>div>small{font-size:8px}
+body #pasaporte .passport-heading .street-passport-cover{width:88px;height:120px;padding:12px 9px;border-left-width:4px}body #pasaporte .passport-heading .street-passport-cover strong{font-size:13px}body #pasaporte .passport-heading .street-passport-cover small{font-size:6px}body #pasaporte .passport-heading .cover-layers{width:50px;height:32px;margin:2px 0;transform:scale(.6);transform-origin:left top}
+body #pasaporte .passport-tile[data-stamped=true] img.illustrated-stamp{width:58px;height:58px;max-height:58px;min-height:0;max-width:100%;flex-shrink:0}
+}
+@media print{body .passport-heading{display:none}body .illustrated-stamp{filter:none!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
