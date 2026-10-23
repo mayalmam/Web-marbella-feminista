@@ -37,3 +37,6 @@ body #pasaporte>.wrap{padding-top:26px}body .passport-cover{padding:20px;border-
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.segment,.street-passport-cover{transition:none}}
 @media print{.street-mobile-nav,.street-collage,.street-passport-teaser,.mobile-passport-link,.street-statbar,.app-map-section,.history-search,.app-stop-back{display:none!important}.street-layout{display:block}.street-hero{padding:0}.street-copy{min-height:0}.street-copy h1{font-size:30pt}.street-copy h2,.street-copy .street-lead,.street-copy .street-count{color:#000}.street-map{max-width:300px;border:1px solid #000;box-shadow:none}.street-map:before,.street-map:after{display:none}.histories-section{display:none!important}body{padding:0}}
+
+@media(min-width:781px){.street-lead{background:var(--cream);padding:8px 14px 8px 0;box-sizing:border-box}.navlinks a{border-radius:0;box-shadow:none}}
+@media(max-width:780px){.app-ready[data-view=ficha] #paradas-contenido>p,.app-ready[data-view=ficha] #stop-audio{display:none!important}}
