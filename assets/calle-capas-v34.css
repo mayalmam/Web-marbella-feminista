@@ -27,3 +27,4 @@ body .passport-cover{max-width:480px;min-height:230px;background:var(--violet);c
 body #ruta-uno .agua-stop a,body #mapa-agua .agua-stop a,body #ruta-tres .agua-stop a,body #ruta-uno .agua-stop a:visited,body #mapa-agua .agua-stop a:visited,body #ruta-tres .agua-stop a:visited{color:#5420a5!important;background:transparent!important}
 /* Las declaraciones importantes de la capa base preceden a las externas. */
 @layer v23{body #ruta-uno .agua-stop a,body #mapa-agua .agua-stop a,body #ruta-tres .agua-stop a{color:#5420a5!important;background:transparent!important}}
+body #pasaporte .passport-cover:before{display:none!important}body #pasaporte .passport-cover{aspect-ratio:3/4;max-width:280px;min-height:0;display:flex;flex-direction:column;justify-content:space-between;box-sizing:border-box}body #pasaporte .passport-cover h2{font-size:38px;line-height:1.1}body #pasaporte .passport-cover p{font-size:13px}
