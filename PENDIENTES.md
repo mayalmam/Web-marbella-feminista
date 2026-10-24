@@ -78,6 +78,10 @@ Lista abierta para reunir propuestas y revisarlas más adelante. Anotar una idea
 - **Fecha de incorporación:** 24 de octubre de 2026.
 - **Estado:** pendiente; sin implementar.
 - **Objetivo:** Comparar las propuestas de collage guardadas y decidir la imagen central definitiva, comprobando su encaje en escritorio y móvil.
+- [ ] Decidir si la mujer lleva bata u otra vestimenta.
+- [ ] Revisar y acordar las posiciones y gestos de las tres mujeres.
+- [ ] Revisar sus rasgos y expresiones; en la mujer mayor, valorar cejas más suaves y rostro más redondeado, manteniendo una edad claramente reconocible.
+- [ ] Elegir el estilo de dibujo y el fondo entre las propuestas conservadas antes de aplicarlos.
 - [ ] Revisar y realizar esta tarea cuando corresponda.
 
 ### P-011 · Repasar el cartel o lámina que genera el PDF
