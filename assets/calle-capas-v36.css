@@ -1,0 +1,25 @@
+@import url('calle-capas-v35.css');
+/* La ilustración seleccionada se muestra íntegra, sin máscaras ni superposición. */
+body .street-layout{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:32px;align-items:center}
+body .street-copy{display:flex;flex-direction:column;align-items:flex-start;min-height:0;padding:0 0 25px;isolation:auto}
+body .street-copy:after{display:none}
+body .street-copy h1{font-size:clamp(42px,4.6vw,72px);max-width:100%;margin-bottom:12px}
+body .street-copy h2{font-size:clamp(20px,1.8vw,26px)}
+body .street-copy .street-count{margin-bottom:10px;font-size:16px}
+body .street-copy .street-lead{max-width:64ch;background:none;padding:0;font:14px/1.55 Arial,sans-serif;margin:0 0 14px}
+body .street-copy>.street-collage{position:static;display:block;order:1;grid-area:auto;width:100%;height:auto;max-height:none;aspect-ratio:3/2;object-fit:contain;object-position:center;margin:0 0 18px;align-self:center;z-index:auto;pointer-events:none}
+body .street-copy>.street-cta{order:2;min-height:48px;font-size:14px;padding:12px 20px;align-self:flex-start}
+body .street-copy>.street-story-link{order:3;margin-top:12px;font-size:12px;align-self:flex-start;width:auto}
+body .street-copy>.mobile-passport-link{order:4}
+body .street-map{margin-bottom:24px}
+@media(max-width:780px){
+body .street-layout{display:block}
+body .street-copy{padding-bottom:22px}
+body .street-copy h1{font-size:clamp(40px,10.5vw,66px)}
+body .street-copy h2{font-size:20px}
+body .street-copy>.street-collage{margin:4px 0 16px;max-width:600px}
+body .street-copy>.street-cta{width:100%;font-size:16px;min-height:52px}
+body .street-copy>.street-story-link{align-self:center;text-align:center;margin:0;padding:14px 0}
+body .street-copy>.mobile-passport-link{width:100%}
+}
+@media print{body .street-copy>.street-collage{display:none!important}}
