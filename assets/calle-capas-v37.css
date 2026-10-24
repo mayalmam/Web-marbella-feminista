@@ -1,0 +1,30 @@
+@import url('calle-capas-v36.css?r=2');
+/* Texto, grupo y plano: tres zonas, figuras completas sobre fondo transparente. */
+body .street-layout{grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:34px;align-items:center}
+body .street-copy{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.34fr);column-gap:6px;row-gap:0;align-content:center;align-items:start;min-height:590px;padding:20px 0 25px}
+body .street-copy>:not(.street-collage){grid-column:1;order:0}
+body .street-copy>.street-kicker{justify-self:start;font-size:16px;margin:0 0 18px}
+body .street-copy>h1{font-size:clamp(38px,3.6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:0 0 18px;grid-row:2}
+body .street-copy>h2{font-size:21px;line-height:1.2;grid-row:3;margin:0 0 16px}
+body .street-copy>.street-count{font-size:14px;grid-row:4;margin:0 0 10px}
+body .street-copy>.street-lead{font-size:13px;line-height:1.6;grid-row:5;margin:0 0 24px;align-self:start}
+body .street-copy>.street-collage{grid-column:2;grid-row:1/8;order:0;align-self:center;position:static;width:100%;height:auto;max-height:none;aspect-ratio:1122/1402;object-fit:contain;margin:0;z-index:0}
+body .street-copy>.street-cta{grid-row:6;font-size:12px;padding:12px 13px;justify-self:start;margin:0;align-self:start}
+body .street-copy>.street-story-link{grid-row:7;font-size:11px;margin:14px 0 0;align-self:start}
+body .street-map{margin:0 0 20px}
+@media(min-width:781px) and (max-width:1100px){body .street-layout{grid-template-columns:minmax(0,1fr);gap:10px}body .street-copy{max-width:850px;min-height:0;margin:auto;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);column-gap:24px}body .street-copy>h1{font-size:clamp(45px,6vw,60px)}body .street-map{max-width:640px;width:90%;justify-self:center;margin:20px 0 35px}}
+@media(max-width:780px){
+body .street-layout{display:block}
+body .street-copy{display:flex;flex-direction:column;min-height:0;padding:0 0 22px;gap:0}
+body .hero-desktop-break{display:none}
+body .street-copy>h1{font-size:clamp(40px,10.5vw,66px);line-height:1.04;margin-bottom:12px}
+body .street-copy>.street-kicker{font-size:15px;margin-bottom:14px}
+body .street-copy>h2{font-size:20px;margin-bottom:9px}
+body .street-copy>.street-count{font-size:16px;margin-bottom:10px}
+body .street-copy>.street-lead{font-size:14px;margin-bottom:0}
+body .street-copy>.street-collage{order:1;width:100%;height:auto;max-height:440px;aspect-ratio:1122/1402;margin:12px 0 16px;object-fit:contain}
+body .street-copy>.street-cta{order:2;width:100%;font-size:16px;min-height:52px}
+body .street-copy>.street-story-link{order:3;align-self:center;text-align:center;margin:0;padding:14px 0;font-size:13px}
+body .street-copy>.mobile-passport-link{order:4;width:100%}
+}
+@media print{body .street-copy{display:block;min-height:0}body .street-copy>.street-collage{display:none!important}}
