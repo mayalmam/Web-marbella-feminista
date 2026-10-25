@@ -16,8 +16,8 @@ routes.forEach(route=>{
   popup.firstChild.className='agua-photo-placeholder';
   const detail=text('a','Descubre su historia ↓');detail.href='#parada-'+p.n;popup.append(detail,document.createElement('br'));
   const link=text('a','Cómo llegar · Google Maps ↗');link.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.query);link.target='_blank';link.rel='noopener noreferrer';popup.append(link);
-  const icon=L.divIcon({className:'',html:'<div class="agua-pin">'+String(p.n).padStart(2,'0')+'</div>',iconSize:[32,32],iconAnchor:[16,16]});
-  const marker=L.marker([p.lat,p.lng],{icon,keyboard:true,title:'Parada '+String(p.n).padStart(2,'0')+' · '+p.name,alt:'Parada '+String(p.n).padStart(2,'0')+' · '+p.name}).addTo(map).bindPopup(popup);marker.getElement()?.setAttribute('aria-label','Parada '+String(p.n).padStart(2,'0')+' · '+p.name);
+  const icon=L.divIcon({className:'',html:'<div class="agua-pin" aria-hidden="true">'+String(p.n).padStart(2,'0')+'</div>',iconSize:[32,32],iconAnchor:[16,16]});
+  const marker=L.marker([p.lat,p.lng],{icon,keyboard:true,title:'Parada '+String(p.n).padStart(2,'0')+' · '+p.name,alt:'Parada '+String(p.n).padStart(2,'0')+' · '+p.name}).addTo(map).bindPopup(popup);const labelMarker=()=>{const node=marker.getElement();if(node){node.setAttribute('role','button');node.setAttribute('aria-label','Parada '+String(p.n).padStart(2,'0')+' · '+p.name);}};marker.on('add',labelMarker);labelMarker();
  });
  function fit(){if(el.clientWidth<100||el.clientHeight<100)return;map.invalidateSize({pan:false,animate:false});map.fitBounds(line.getBounds().pad(.20),{maxZoom:17,animate:false});}
  let queued=false;function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;fit();});}
