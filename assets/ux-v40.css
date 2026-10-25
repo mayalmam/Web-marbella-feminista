@@ -1,0 +1,29 @@
+/* v40: hierarchy, reading and controls; preserve editorial identity. */
+.ux-route-facts{font:14px/1.5 Arial,sans-serif;margin:18px 0}.ux-route-facts dt{font-weight:800;margin-top:10px}.ux-route-facts dd{margin:2px 0 0}.ux-route-action{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:2px solid currentColor}
+body .street-story-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px!important;border:2px solid currentColor;font-size:14px!important;font-weight:700}
+body .street-cta,body .ruta-botones a,body .agua-stop a,body .parada-toggle,body .paradas-bloque-toggle,body .printbtn,body .filter button,body .ruta-cerrar,body .history-controls button,body .menu{min-height:44px}
+body .route-index a{min-width:44px;min-height:44px}.route-index{gap:10px}
+body .stop details p,body .stop .theme{font-size:17px;line-height:1.7}
+body .stop summary,body #proyecto summary{min-height:44px;padding:10px 0;font-weight:700;font-size:16px}
+.ux-membership{font-size:14px;line-height:1.6}.ux-membership a{display:inline-block;min-height:44px;padding:8px 0}
+.ux-stamp-help,.ux-field-note{font-size:14px;line-height:1.6;padding:12px 16px;border-left:4px solid #762080;background:#f7f4e9;color:#191919}
+.ux-stop-nav{grid-column:1/-1;display:flex;gap:16px;flex-wrap:wrap;margin-top:18px}
+.ux-stop-nav a{flex:1 1 220px;min-height:44px;border:1px solid currentColor;padding:12px;text-decoration:none;font-size:14px}
+body .stamp-notice{color:#331644;background:#eff4d7;font-size:16px;padding:14px}
+body .passport-tile small{line-height:1.35;overflow-wrap:anywhere}
+body .route-section .segment,body .route-section .segment *{color:#191919!important}
+body a:focus-visible,body button:focus-visible,body summary:focus-visible,body input:focus-visible{outline:3px solid #191919;outline-offset:4px;box-shadow:0 0 0 7px #f7f4e9}
+body #proyecto .resource{margin-top:20px}body .agua-stop a{margin:6px 6px 0 0}
+body .tramo-mapa{touch-action:pan-y}
+@media(max-width:780px){body.app-ready[data-view="inicio"] #recorrido{display:block!important}
+body .segments{display:grid;grid-template-columns:minmax(0,1fr)!important}
+body .segment{min-width:0}body .segment strong{font-size:26px}
+body .street-mobile-nav a{min-width:44px;min-height:52px}
+body .ux-route-facts{font-size:15px}body .ux-stop-nav{display:grid;grid-template-columns:minmax(0,1fr)}
+body .wrap{max-width:100%}body .stop>div{min-width:0}
+body .voice-controls select{max-width:100%}body .passport-tile small{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{.ux-stop-nav,.ux-stamp-help,.ux-route-action{display:none!important}}
+
+body .links a,body .links button{display:inline-flex;align-items:center;min-height:44px;font-size:14px}body .ux-map-pending{display:block;padding:12px;background:#f7f4e9;color:#191919;border:2px dashed #191919;font:700 13px/1.4 Arial;max-width:200px;min-height:44px}
