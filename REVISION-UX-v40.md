@@ -58,3 +58,11 @@ Pedir a personas que no conozcan el proyecto que elijan un paseo, encuentren el 
 | 5 | | | | | | |
 
 Registrar por tarea: completada sin ayuda / con ayuda / no completada; punto de duda; qué esperaba que ocurriera al pulsar. Revisar resultados antes de aprobar el diseño.
+
+## Ajustes tras devolución de UX · v41
+Dictamen UX: **apta para iniciar pruebas con usuarias; pendiente de validación de uso y del recorrido sobre el terreno**.
+- Marcadores: nombre accesible completo en el elemento interactivo (número + lugar), con número gráfico oculto al lector para evitar una etiqueta solo numérica. Mantener la etiqueta al añadir de nuevo el marcador. Pendiente prueba específica con lector de pantalla.
+- Parada 07: los enlaces de su lista y ficha pasan a «Consultar referencia provisional · Google Maps». Calle Soledad continúa siendo una referencia provisional, no un punto representativo acordado.
+- Aviso al visitante: «Orden provisional, pendiente de comprobación presencial».
+- Impresión: permanece habilitada durante las pruebas. **Tarea de cierre: deshabilitar la impresión si hay menos de 13 sellos y habilitarla al completar los 13; comprobar el estado también al recargar y reiniciar.**
+- Continúan pendientes la revisión específica del flujo completo historias/sellos, teléfonos reales, contraste, ampliación y lector de pantalla. Las comprobaciones de desarrollo no las sustituyen.
