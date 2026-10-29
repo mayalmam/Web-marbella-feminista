@@ -1,0 +1,19 @@
+/* v42: el plano abre la elección de recorrido. */
+body .street-layout{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px}
+body .street-map{transform:none!important;width:100%;margin:0 0 20px}
+body .street-map::before{transform:rotate(-1deg)!important}
+.route-map-anchor{display:block;scroll-margin-top:100px}
+body .route-choice-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:32px;align-items:start;margin:28px 0}
+body .route-choice-map{margin:0;position:sticky;top:24px;min-width:0;background:#f7f4e9;border:2px solid #191919;box-shadow:8px 8px 0 #c6ef38;transform:none!important}
+body .route-choice-map .route-map-art{width:100%}
+body .route-choice-map figcaption{color:#191919;font:13px/1.5 Arial,sans-serif;padding:14px 16px;border-top:1px solid #191919}
+body .route-choice-layout>.segments{display:grid;grid-template-columns:minmax(0,1fr)!important;gap:16px;margin:0;min-width:0}
+body .route-choice-layout .segment{padding:20px;min-width:0}
+body .route-choice-layout .segment strong{font-size:28px;min-height:0;margin:8px 0 12px}
+body .route-choice-layout .ux-route-facts{display:grid;grid-template-columns:minmax(95px,.65fr) minmax(0,1.35fr);gap:7px 14px;margin:0 0 14px;font-size:13px}
+body .route-choice-layout .ux-route-facts dt,body .route-choice-layout .ux-route-facts dd{margin:0;overflow-wrap:anywhere}
+body .route-choice-layout .passport-entry{width:100%;display:flex;justify-content:center;gap:22px;align-items:center;padding:16px}
+body .route-choice-layout .passport-entry .street-passport-cover{max-width:100px}
+@media(min-width:781px) and (max-width:1100px){body .street-layout{grid-template-columns:minmax(0,1fr)}body .street-map{max-width:720px;width:94%;justify-self:center}}
+@media(max-width:780px){body .street-layout{display:block}body .route-choice-layout{display:flex;flex-direction:column;gap:24px;margin-top:20px}body .route-choice-map{position:static;width:min(100%,440px);align-self:center;box-shadow:5px 5px 0 #c6ef38}body .route-choice-layout>.segments{width:100%}body .route-choice-layout .segment strong{font-size:27px}body .route-choice-layout .ux-route-facts{font-size:14px;grid-template-columns:minmax(95px,.7fr) minmax(0,1.3fr)}body .street-map{width:100%}}
+@media print{.route-choice-layout{display:block!important}.route-choice-map{position:static!important;box-shadow:none!important}}
