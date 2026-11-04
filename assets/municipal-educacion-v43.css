@@ -1,0 +1,186 @@
+/* Propuesta municipal y espacio educativo. Mantiene IDs, rutas y pasaporte existentes. */
+:root{--municipal-teal:#007f8e;--municipal-dark:#123540;--municipal-soft:#e1f4f0;--municipal-line:#d7e3e5;--municipal-purple:#7023a8}
+body{background:#fff;color:var(--municipal-dark);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65}
+body h1,body h2,body h3,body .brand{font-family:Arial,Helvetica,sans-serif;letter-spacing:-.025em;color:var(--municipal-dark)}
+body h2{font-size:clamp(25px,3vw,37px);font-weight:750;line-height:1.16;text-transform:none}
+body h3{font-size:22px;line-height:1.25}
+body a{color:#006e7c}
+body .wrap{width:min(1180px,92%)}
+body .banner{background:#123540;font-size:10px;letter-spacing:.1em}
+body header.municipal-header{position:relative;background:#fff;border:0;z-index:20}
+body .municipal-masthead{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:25px 0}
+body .brand{font-size:27px;line-height:1.1;font-weight:800;text-decoration:none}
+body .brand small{font-size:11px;letter-spacing:.2em;font-weight:600;margin-top:8px}
+.municipal-meta{margin:0;font-size:14px;color:#26434c}
+body .municipal-nav{display:block;background:var(--municipal-teal);padding:0}
+body .navlinks{display:flex;position:static;gap:5px;background:transparent;padding:0;border:0}
+body .navlinks a{color:#fff;font-size:14px;font-weight:700;padding:13px 18px;text-decoration:none;min-height:48px;display:flex;align-items:center}
+body .navlinks a:hover,body .navlinks a[aria-current="page"]{background:#00616d;box-shadow:inset 0 -3px 0 #fff}
+body .menu{display:none}
+.municipal-eyebrow{font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.municipal-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:10px 20px;border:2px solid var(--municipal-teal);background:var(--municipal-teal);border-radius:7px;color:#fff!important;font:700 14px/1.4 Arial,sans-serif;text-decoration:none;text-align:center;cursor:pointer}
+.municipal-button:hover{background:#005c69;border-color:#005c69}
+.municipal-button.outline{background:#fff;color:#00616d!important}
+.municipal-button.light{background:#fff;border-color:#fff;color:#123540!important}
+.municipal-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+body .municipal-home,.education-hero{background:#d8edef url("plaza-educacion-v43.webp") center 55%/cover no-repeat;padding:44px 0 12px}
+.municipal-home-intro{max-width:890px;margin:0 auto 26px;padding:26px 30px;background:#fffffff5;border-radius:13px}
+body .municipal-home-intro h1{font-size:clamp(32px,4vw,48px);line-height:1.08;margin:6px 0 14px;letter-spacing:-.035em;text-transform:none;font-weight:800}
+.municipal-home-intro>p:last-child{font-size:18px;margin:0}
+.municipal-home-actions{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1000px;margin:auto}
+.municipal-home-actions article{border-radius:12px;padding:24px;background:#074d58ed;color:#fff}
+body .municipal-home-actions h2{color:#fff;font-size:26px;margin:0 0 12px;line-height:1.15}
+.municipal-home-actions p{margin:0 0 16px}
+.municipal-home-passport{display:flex;align-items:center;gap:24px}
+body .municipal-home-passport .street-passport-cover{width:110px;min-width:90px;flex-shrink:0}
+.hero-art-credit{font-size:10px;color:#183b43;background:#ffffffe6;width:fit-content;max-width:100%;padding:2px 8px;border-radius:3px;margin-top:12px!important}
+body .route-section{background:#fff;color:#123540}
+body .route-section h2,body .route-section .eyebrow{color:#123540}
+body .route-choice-map{border:1px solid var(--municipal-line);box-shadow:none;border-radius:12px;overflow:hidden}
+body .route-choice-layout>.segments{gap:15px}
+body .segments>.segment{border:1px solid var(--municipal-line);border-left:5px solid var(--municipal-teal);border-radius:10px;background:#f7fafb;color:#123540!important}
+body .route-section .segment,body .route-section .segment *{color:#123540!important}
+body .segments>.segment strong{font-family:Arial,sans-serif;font-size:25px}
+body .segments .ux-route-action{border:0;border-radius:6px;background:#007f8e;color:#fff!important;min-height:44px}
+body .map-help{color:#3f5961;background:#f3f8f8;padding:16px 20px;border:0;border-left:4px solid #007f8e}
+body .map-help .small{color:#3f5961}
+body .route-index a{color:#00616d;background:#fff;border:1px solid #b8cfd3;border-radius:6px}
+body .route-index a:hover{background:#e1f4f0}
+body .histories-section,body .resources{background:#f3f8f8}
+body .histories-section h2,body .history-card h3,body .histories-section .eyebrow{color:#123540}
+body .history-card{border:1px solid #d7e3e5;border-radius:12px;background:white}
+body .history-card a{color:#006b78}
+body .street-passport-teaser{background:#e8f5f2;color:#123540}
+body .street-passport-teaser h2{color:#123540;font-family:Arial,sans-serif;font-size:38px}
+body footer{background:#123540;color:white}body footer a{color:white}
+body .ruta-detalle,body .agua-piloto{background:#f7fafb;color:#123540;border-top-color:#007f8e}
+body .ruta-detalle h2,body .agua-piloto h2,body .ruta-eyebrow{color:#123540}
+body .ruta-botones a,body .agua-stop a,body .parada-toggle,body .filter button[aria-pressed=true]{background:#007f8e;color:white!important;border-color:#007f8e;border-radius:7px}
+body .filter button{border-color:#007f8e;color:#00616d;border-radius:6px}
+body .number{font-family:Arial,sans-serif;color:#007f8e;font-size:58px;letter-spacing:-2px}
+body .stop h3{font-family:Arial,sans-serif;color:#123540}
+body .agua-stop{border-left-color:#007f8e;border-radius:8px}
+body .agua-map{border-color:#bacfd3;border-radius:10px}
+body .stop summary,body .stop .listen{color:#00616d}
+body .printbtn{border-color:#007f8e;color:#00616d;border-radius:6px}
+body .street-mobile-nav{background:#fff;border-top:1px solid #c7dadd;grid-template-columns:repeat(5,minmax(0,1fr))}
+body .street-mobile-nav a{color:#123540;min-width:0;font-size:10px}
+body .street-mobile-nav a[aria-current=page]{background:#e1f4f0;color:#005a65}
+body a:focus-visible,body button:focus-visible,body summary:focus-visible{outline:3px solid #123540;outline-offset:4px;box-shadow:0 0 0 6px #fff}
+#educacion{display:none}
+body.app-ready[data-view="educacion"] main>section:not(#educacion){display:none!important}
+body.app-ready[data-view="educacion"] #educacion{display:block!important}
+body .education-hero{padding-top:36px}
+.education-hero-inner{display:flex;align-items:center;gap:30px;max-width:1080px}
+.education-intro{background:#fffffff7;border-radius:14px;padding:30px;flex:1}
+body .education-intro h1{font-size:clamp(32px,3.7vw,49px);font-weight:800;line-height:1.07;margin:7px 0 16px;text-transform:none;letter-spacing:-.035em}
+.education-intro>p:not(.municipal-eyebrow){font-size:18px;line-height:1.5;margin:0}
+body .education-book .street-passport-cover{width:155px;height:200px;transform:rotate(8deg);box-shadow:5px 9px 15px #16394544}
+.education-body{padding:26px 0 48px}
+.education-stage{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+body .education-stage h2{font-size:25px;margin:0}
+.education-stage>p{font-size:12px;color:#465e65;max-width:270px;margin:0}
+.stage-options{display:flex;gap:10px;flex-wrap:wrap}
+.stage-options button,.education-phases button{border:1px solid #c9e4df;background:#e1f4f0;color:#123540;border-radius:8px;min-height:44px;padding:10px 18px;font-size:14px;font-weight:700;cursor:pointer}
+.stage-options button[aria-pressed=true],.education-phases button[aria-pressed=true]{background:#006d79;color:white;border-color:#006d79}
+.education-stage-context{font-size:14px;line-height:1.6;color:#36545c;margin:16px 0 24px}
+.education-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.education-card{display:flex;flex-direction:column;align-items:flex-start;border:1px solid #d7e3e5;background:linear-gradient(145deg,#fff,#f7fafb);border-radius:14px;padding:24px;min-width:0}
+body .education-card h2{font-size:23px;margin:12px 0}
+.education-card p{font-size:15px;line-height:1.6;margin:0 0 22px}
+.education-card .municipal-button{margin-top:auto;align-self:stretch}
+.education-icon{width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#e1f4f0;color:#007481;font-size:34px}
+.education-panel{margin-top:24px;padding:25px;background:#f3f9f8;border:1px solid #b8d8d3;border-radius:14px;scroll-margin-top:24px}
+.education-panel[hidden]{display:none!important}
+.education-panel-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:12px}
+body .education-panel-heading h2{font-size:26px;margin:0}
+.education-panel-heading>button{background:white;color:#005a65;border:1px solid #b8d8d3;border-radius:6px;min-height:44px;padding:8px 12px;flex-shrink:0;cursor:pointer}
+.education-route-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.education-route-options article{background:white;border:1px solid #d7e3e5;padding:18px;border-radius:10px}
+body .education-route-options h3{font-size:19px}
+.education-route-options p{font-size:14px}
+.education-status{font-size:13px;line-height:1.65;color:#455d65;margin:18px 0 0;border-top:1px solid #d0e2df;padding-top:12px}
+.education-game-layout{display:grid;grid-template-columns:1.15fr 1fr;gap:24px}
+.education-game{background:white;border-radius:12px;border:1px solid #d7e3e5;padding:22px}
+.education-game-options{display:grid;gap:10px}
+.education-game-options button{background:#f1f9f7;color:#123540;border:1px solid #a8c9c6;border-radius:7px;min-height:48px;font-size:15px;padding:10px;cursor:pointer}
+.education-game-options button[aria-pressed=true]{outline:2px solid #006d79;background:#d8eee9}
+.education-game-feedback{min-height:56px;font-size:15px;font-weight:600;color:#005763}
+.education-game-layout details{border-bottom:1px solid #c4d9d7;padding:6px 0}
+.education-game-layout summary{min-height:44px;color:#005a65;font-size:16px;padding:10px 0}
+.education-game-layout details p{font-size:15px;line-height:1.65}
+.education-checklist{padding-left:22px}.education-checklist li{margin:10px 0}
+.education-worksheet{background:white;border:1px solid #bdcfcf;padding:22px;margin:22px 0}
+.education-worksheet h3{margin-top:0}.education-worksheet p{font-size:15px;line-height:1.7}
+.education-notes-lines{height:110px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 26px,#d2dddd 27px,#d2dddd 28px)}
+.education-bottom{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:center;margin-top:40px}
+.education-map{margin:0}
+body .education-map h2,body .education-class-passport h2{font-size:28px;margin-top:0}
+.education-map img{display:block;width:100%;height:auto;border:1px solid #e6e6de;border-radius:10px}
+.education-map figcaption{font-size:12px;color:#455d65;padding:8px 0}
+.education-passport-intro{display:flex;align-items:center;gap:25px}
+body .education-passport-intro>.street-passport-cover{width:140px;min-width:115px;transform:rotate(-5deg)}
+.education-passport-intro p{font-size:17px}
+.education-proposal-label{display:inline-block;font-size:11px;color:#4b3d70;border:1px solid #d2c2e2;padding:4px 10px;border-radius:15px}
+.education-phases{display:flex;gap:10px;margin:24px 0 14px;flex-wrap:wrap}
+#edu-phase-content{min-height:100px;padding:18px;background:#f0f8f6;border-radius:10px;line-height:1.7}
+.education-class-passport>p{font-size:14px}
+.education-review-note{text-align:center;background:#f2f6f7;border-radius:8px;color:#465961;padding:10px 15px;font-size:13px;margin-top:30px}
+@media(max-width:1000px) and (min-width:781px){.education-hero-inner{gap:15px}.education-intro{padding:25px}.education-cards{gap:12px}.education-card{padding:18px}.education-route-options{grid-template-columns:1fr}}
+@media(max-width:780px){
+body .municipal-masthead{padding:20px 0;gap:12px;flex-wrap:wrap}
+body .brand{font-size:22px}.municipal-meta{font-size:11px;order:3;width:100%;text-align:left}
+body .menu{display:block;background:#fff;color:#005a65;border:1px solid #a8c7cb;border-radius:6px;min-height:44px;padding:8px 14px;margin-left:auto}
+body .municipal-nav .navlinks{display:none;position:static;width:92%;padding:8px 0;background:#007f8e;flex-wrap:wrap;gap:0}
+body .municipal-nav .navlinks.open{display:flex}
+body .municipal-nav .navlinks a{font-size:14px;padding:10px 14px;min-height:44px}
+body .municipal-nav{min-height:6px}
+body .municipal-home{padding:22px 0 12px}
+.municipal-home-intro{padding:24px 20px;margin-bottom:18px}
+body .municipal-home-intro h1{font-size:34px}.municipal-home-intro>p:last-child{font-size:16px}
+.municipal-home-actions{grid-template-columns:1fr;gap:12px}.municipal-home-actions article{padding:20px}
+body .municipal-home-actions h2{font-size:24px}
+body .municipal-home-passport .street-passport-cover{width:88px;min-width:80px}
+.municipal-button{font-size:14px;min-height:48px}
+body .education-hero{padding:22px 0 12px}
+.education-hero-inner{display:block}.education-intro{padding:25px 20px}
+body .education-intro h1{font-size:34px}
+.education-intro>p:not(.municipal-eyebrow){font-size:17px}
+.education-book{display:none}
+.municipal-actions{flex-direction:column;gap:10px}.municipal-actions>.municipal-button{width:100%}
+.education-body{padding-top:24px}
+.education-stage{gap:15px}.education-stage>p{max-width:none}
+.stage-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:7px}
+.stage-options button{padding:8px 6px;font-size:12px;min-height:46px}
+.education-cards{grid-template-columns:1fr;gap:14px}.education-card{padding:22px}
+body .education-card h2{font-size:24px}
+.education-card p{font-size:16px}
+.education-panel{padding:20px 16px}.education-panel-heading{align-items:flex-start}
+body .education-panel-heading h2{font-size:23px}
+.education-panel-heading>button{font-size:12px;padding:8px;min-width:62px}
+.education-route-options,.education-game-layout,.education-bottom{grid-template-columns:1fr}
+.education-game{padding:18px}
+.education-bottom{gap:26px;margin-top:28px}
+.education-map{max-width:470px;justify-self:center;width:100%}
+.education-passport-intro{gap:16px}.education-passport-intro p{font-size:16px}
+body .education-passport-intro>.street-passport-cover{min-width:90px;width:100px}
+body .education-class-passport h2{font-size:25px}
+.education-worksheet{padding:17px}
+body.app-ready[data-view="educacion"] #educacion{padding-bottom:25px}
+}
+@media(prefers-reduced-motion:reduce){.education-book .street-passport-cover,.education-passport-intro .street-passport-cover{transform:none!important}}
+@media print{
+body.education-print header,body.education-print main>section:not(#educacion),body.education-print footer,body.education-print .street-mobile-nav{display:none!important}
+body.education-print #educacion{display:block!important}
+body.education-print #educacion .education-hero,body.education-print #educacion .education-body>*:not(.education-workspace),body.education-print .education-workspace>*:not(#edu-profesorado),body.education-print #edu-profesorado>*:not(.education-worksheet){display:none!important}
+body.education-print #edu-profesorado{display:block!important;border:0;margin:0;padding:0;background:white}
+body.education-print .education-worksheet{margin:0;border:0;padding:0}body.education-print .education-body{padding:0}
+body.education-print .print-souvenir{display:none!important}
+}
+/* Evita que las reglas de portadas antiguas prevalezcan en la nueva cabecera. */
+body .municipal-header .brand{font-family:Arial,Helvetica,sans-serif!important;font-weight:800!important;letter-spacing:-.025em!important}
+body .municipal-nav .navlinks a{color:white!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none}
+body .municipal-nav .navlinks a:hover,body .municipal-nav .navlinks a[aria-current="page"]{background:#00616d!important;box-shadow:inset 0 -3px 0 white}
+body .municipal-header .menu{background:white!important;color:#005a65!important;border:1px solid #a8c7cb!important;border-radius:6px!important}
+
+body #educacion{overflow-wrap:break-word}body .education-worksheet p{overflow-wrap:anywhere}body .education-body>*{min-width:0}
