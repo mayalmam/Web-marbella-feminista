@@ -832,7 +832,7 @@ body .route-section .segments>.segment *{color:#143743!important}
 body .route-section .segments>.segment .ux-route-action{background:#007F8B!important;color:#FAFBF8!important;border:0!important}
 body .route-map-art svg circle{fill:#007F8B;stroke:#FAFBF8}
 body .route-map-art svg text{fill:#FAFBF8}
-body .route-map-art svg path[fill]{fill:#007F8B}
+body .route-map-art svg path[fill="none"]{fill:none}
 body .agua-pin{background:#007F8B!important;color:#FAFBF8!important;border-color:#FAFBF8!important}
 body .btn,body .parada-toggle,body .paradas-bloque-toggle,body .ruta-botones a,body .agua-stop a,body .filter button[aria-pressed=true]{background:#007F8B!important;color:#FAFBF8!important;border-color:#007F8B!important}
 body .histories-section,body .resources,body .ruta-detalle,body .agua-piloto,body .street-passport-teaser{background:#007F8B0D!important;color:#143743!important}
@@ -849,3 +849,6 @@ body .education-proposal-label{color:#143743;border-color:#007F8B30}
 body #pasaporte .passport-book{background:linear-gradient(90deg,#FAFBF8 0%,#FAFBF8 47%,#14374326 50%,#FAFBF8 53%,#FAFBF8 100%)!important;border-color:#14374330!important;box-shadow:5px 6px 0 #14374318!important}
 body #pasaporte{background:#FAFBF8!important}
 body .passport-tile:not([data-stamped=true]) .passport-symbol{opacity:.65!important;color:#143743!important}
+
+body h1,body h2,body h3,body .brand{font-family:Arial,Helvetica,sans-serif!important}
+body .route-map-art svg path{fill:none!important}
