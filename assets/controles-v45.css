@@ -1,0 +1,40 @@
+/* v45 · navegación móvil redondeada y recorridos más visibles. */
+body .route-section .segments>.segment{
+ background:#007F8B24!important;
+ border:1px solid #007F8B66!important;
+ border-left:6px solid #007F8B!important;
+ border-radius:16px!important;
+ box-shadow:0 4px 12px #1437430D!important;
+}
+body .route-section .segments>.segment:hover,
+body .route-section .segments>.segment:focus-visible{background:#007F8B32!important;border-color:#007F8B!important}
+body .route-section .segments>.segment .ux-route-action{border-radius:999px!important;padding:11px 20px!important}
+@media(max-width:780px){
+ body .street-mobile-nav{
+  gap:6px!important;
+  padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px))!important;
+  background:#FAFBF8!important;
+  border-top:1px solid #007F8B40!important;
+  box-shadow:0 -5px 20px #14374318!important;
+  align-items:stretch!important;
+ }
+ body .street-mobile-nav a{
+  display:flex!important;flex-direction:column!important;
+  justify-content:center!important;align-items:center!important;gap:3px!important;
+  min-height:62px!important;min-width:0!important;
+  padding:7px 2px!important;
+  border:1px solid #007F8B40!important;border-radius:18px!important;
+  background:#007F8B18!important;color:#143743!important;
+  font:600 10px/1.25 Arial,Helvetica,sans-serif!important;
+  text-decoration:none!important;
+ }
+ body .street-mobile-nav a>span{color:inherit!important;line-height:1!important;font-size:25px!important}
+ body .street-mobile-nav a[aria-current="page"]{
+  background:#007F8B!important;color:#FAFBF8!important;
+  border-color:#007F8B!important;box-shadow:0 3px 7px #14374326!important;
+  font-weight:800!important;
+ }
+ body .street-mobile-nav a:hover{border-color:#007F8B!important}
+ body .street-mobile-nav a:focus-visible{outline:3px solid #143743!important;outline-offset:2px!important}
+ body.app-ready{padding-bottom:calc(100px + env(safe-area-inset-bottom,0px))!important}
+}
